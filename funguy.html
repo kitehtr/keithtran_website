@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funguy 2024</title>
+    <title>FunGuy</title>
     <link rel="stylesheet" href="style.css"> 
     <style>
         .back-link {
@@ -27,16 +27,100 @@
         </header>
 
         <!-- Page content -->
-        <h1>Funguy 2024</h1>
-        <p>Funguy is an RTS Casual game about restoring the ecosystem...</p>
+        <h1 style="text-align: center;">Funguy 2024 - Present</h1>
+        <p style="text-align: center;">Funguy an RTS Casual game about Funguy restoring the ecosystem after general environmental damage that befalls their neighborhood.</p>
 
-
-
+        <img src="personal-portfolio-img/images/Funguyposter2.png" style="width: 500px; height: auto; display: block; margin: 0 auto;">
         <p>
-            <a href="https://gameheads.itch.io/funguy" target="_blank">
-                Play the game here
-            </a>
+            <div style="text-align: center;">
+        <a href="https://gameheads.itch.io/funguy" target="_blank">
+        Play the 2024 Showcase Build
+        </a>
+            </div>
+
         </p>
     </div>
+    <section id="videos">
+
+  <h1>Gameplay Features I developed for this game: (Will be avaliable in the next showcase build)</h2><br>
+  <h1>Saving Progress throughout the level</h2>
+  <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gKxJ5GIB7ac" 
+      title="Video 1" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <ul>
+  <li>Kept track of breakable objects and made sure to destroy them if a player returned to a level before completing the game</li>
+  <li>Progress will periodlically be saved as players reach checkpoints - (Player Health, Trash Count, Player Location, Mushhub location)</li>
+  <li>Progress restores even on game closure: Players will see continue button on Main Menu</li>
+  
+    </ul>
+    </div>
+  <h1>Ant AI - EQS Strafing & Group Combat</h2>
+  <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/q7_xGAMg5i0" 
+      title="Video 1" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <ul>
+  <li>Set up EQS (Environment Query System) so that the Enemy Ants will strafe around the player rather than just running at the player to attack</li>
+  <li>Group Enemy Attack: Enemies take turns attacking the player with attack token system so the players aren't overwhelmed by too many enemies attacking at once</li>
+    </ul>
+    </div>
+
+ <h1>Ant AI - Additional Attack Behavior - Jump Attack</h2>
+ <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eLBJDZHojHY" 
+      title="Video 1" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <ul>
+  <li>Enemies will predict the location of the player and jump attack torwards the player if they are too far away during an attack. </li>
+  <li>Enemies will perform either the regular attack or jump attack based on distance.</li>
+    </ul>
+  </div>
+
+  <h1>Ant AI - Enemy Spawners</h2>
+ <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ht1lem1Ad7Q" 
+      title="Video 1" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <ul>
+  <li>Upon engaging combat with the ant in the last portion of the level, enemy ants will periodlically spawn 5 total enemies every 60-180 seconds</li>
+  <li>Enemies were chosen to only spawn when engaging in this portion of combat so computers and players don't explode when reaching this part of the level.</li>
+    </ul>
+  </div>
+
+  <h1>Ant AI - Enemy Armor System (WIP)</h2>
+ <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZNMVBLSvjY8" 
+      title="Video 1" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <ul>
+  <li>This feature is still a work in progress but this allows enemies to stay alive longer to fight the player.</li>
+
+    </ul>
+  </div>
+
+
+  <h1>Interact & Dialogue System</h2>
+  <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PFl3QPDfjOM" 
+      title="Video 2" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <ul>
+  <li>Built interact system so players can interact with NPCS around the map, doors, and mailboxes</li>
+  <li>Main component of the interact system is the dialogue system which allows players to converse with NPCs</li>
+  <li>NPCs will remember chosen dialogue and change dynamically based on choosen dialogue options</li>
+    </ul>
+  </div>
+
+
+
+</section>
+
 </body>
 </html>

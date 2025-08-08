@@ -508,3 +508,30 @@ nav .fa-solid{
     margin-right: 0; 
 }
 
+#videos {
+  max-width: 800px;      
+  margin: 40px auto;    
+  padding: 20px;
+  text-align: center;     
+}
+
+.video-item {
+  margin-bottom: 40px;
+}
+
+.video-item iframe {
+  width: 100%;            
+  max-width: 560px;     
+  height: 315px;
+  display: block;
+  margin: 0 auto 10px;   
+}
+
+.video-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+#videos p {
+    color: white;
+}

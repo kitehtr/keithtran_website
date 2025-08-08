@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-
 *{
     margin:0;
     padding:0;
@@ -459,7 +458,18 @@ nav .fa-solid{
     display:block;
 }
 
-/* .img_2{
-    width: 939px;
-    height: 678px;
-} */
+#contact .container {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .row {
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+}
+
+.contact-left {
+    flex-basis: 100%;
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wukong - Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #87CEFA; 
+            font-weight: bold;
+        }
+        .back-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        ul {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            line-height: 1.5;
+        }
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Back to Portfolio header -->
+        <header>
+            <h2>
+                <a href="index.html" class="back-link">⬅ Back to Portfolio</a>
+            </h2>
+        </header>
+
+        <!-- Project Title -->
+        <h1>Project: Wukong 2025 - Present</h1>
+
+        <!-- Project Description -->
+        <p>
+            Project Wukong is a solo action prototype built in Unreal Engine 5, featuring responsive melee and ranged combat, intelligent enemy behaviors, interactive breakables, and a reactive stat-driven progression system. Designed and implemented in C++ and Blueprints with a strong focus on gameplay feel, animation timing, VFX feedback, and iterative polish.
+        </p>
+
+        <!-- Centered Video -->
+        <div class="video-container">
+            <iframe width="900" height="600" 
+                src="https://www.youtube.com/embed/kuDTl6hlBwU"
+                title="Gameplay Demo - Wukong" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                style="display: block; margin: 0 auto;">
+            </iframe>
+        </div>
+
+        <!-- Key Features -->
+        <h2>Gameplay Features I Developed</h2>
+        <h3>Key Features</h3>
+        <ul>
+            <li>Enemy AI: melee & ranged behaviors implemented with C++ and Behavior Trees, including a custom EQS and token system that limits the number of enemies attacking simultaneously</li>
+            <li>Combat system: responsive attacks with animation notifies & VFX feedback</li>
+            <li>Breakable & interactive objects integrated into gameplay loops</li>
+            <li>Stats & rewards: player progression and collectible coins for trophy unlocks</li>
+            <li>Debug & polish: iterative testing for responsiveness & stability</li>
+        </ul>
+
+        <!-- Learning Outcomes / Challenges -->
+        <p>Through this project, I refined AI behavior design and iteratively polished gameplay systems to improve player experience and combat responsiveness. This project strengthened my skills in C++ programming, Unreal Engine architecture, and designing engaging gameplay mechanics.</p>
+        <p style="text-align: center;">
+        <a href="https://github.com/kitehtr/WukongGame/tree/main/" target="_blank" style="color:#87CEFA; text-decoration:none; font-weight:bold;">
+        View Project Code on GitHub
+    </a>
+</p>
+      </div>
+</body>
+</html>

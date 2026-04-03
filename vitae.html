@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6db076813e.js" crossorigin="anonymous"></script>
+    <style>
+        .back-link {
+            text-decoration: none;
+            color: #87CEFA;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .btn-inline {
+            display: inline-block;
+        }
+        .contributions {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header style="padding: 20px 0 10px;">
+            <h2><a href="index.html" class="back-link">⬅ Back to Portfolio</a></h2>
+        </header>
+
+        <h1 style="text-align: center; margin-bottom: 10px;">Vitae 2026 – Present</h1>
+        <p style="text-align: center; color: #aaa; margin-bottom: 20px;">Full-Stack Web Application &nbsp;·&nbsp; Role: Frontend Developer &nbsp;·&nbsp; Team Project</p>
+
+        <p style="text-align: center; max-width: 650px; margin: 0 auto 30px; color: #aaa; line-height: 1.8;">
+            A resume version control platform that lets users manage their career history and generate tailored resumes in one place. Built with a modern full-stack using Next.js, React, TypeScript, and PostgreSQL.
+        </p>
+
+        <div style="text-align: center; margin-bottom: 40px;">
+            <a href="https://vitae.tools/" target="_blank" class="btn btn-inline">🌐 &nbsp; Live Web App</a>
+            <a href="https://github.com/njerig/vitae" target="_blank" class="btn btn-inline" style="margin-left: 16px;">
+                <i class="fa-brands fa-github"></i> &nbsp; GitHub
+            </a>
+        </div>
+
+        <img src="personal-portfolio-img/images/vitae.png" style="width: 100%; max-width: 800px; height: 400px; object-fit: cover; object-position: top; display: block; margin: 0 auto 50px; border-radius: 12px;">
+
+        <!-- Overview -->
+        <h2 class="sub-title" style="font-size: 40px; margin-bottom: 16px;">Overview</h2>
+        <p style="max-width: 750px; margin: 0 auto 50px; color: #aaa; line-height: 1.9; text-align: center;">
+            Vitae solves the problem of maintaining multiple resume versions for different job applications. Instead of juggling several Word documents, users build a single <strong>career history</strong> and generate tailored resumes from it. The platform supports <strong>drag-and-drop section reordering</strong>, multiple resume <strong>templates with live preview</strong>, and PDF export.
+        </p>
+
+        <!-- Tech Stack -->
+        <h2 class="sub-title" style="font-size: 40px; margin-bottom: 16px;">Tech Stack</h2>
+        <p style="text-align: center; color: #87CEFA; margin-bottom: 50px; line-height: 2;">
+            Next.js &nbsp;·&nbsp; React &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Tailwind CSS &nbsp;·&nbsp; PostgreSQL &nbsp;·&nbsp; Docker &nbsp;·&nbsp; REST API &nbsp;·&nbsp; Lucide React &nbsp;·&nbsp; React Hot Toast &nbsp;·&nbsp; Custom Hooks
+        </p>
+
+        <!-- Contributions -->
+        <h2 class="sub-title" style="font-size: 40px; margin-bottom: 30px;">My Contributions</h2>
+
+        <div class="work-list contributions">
+            <div style="background: #111; border-radius: 10px; padding: 28px;">
+                <i class="fa-solid fa-house" style="font-size: 24px; color: #87CEFA; margin-bottom: 12px; display: block;"></i>
+                <h3 style="margin-bottom: 10px;">Landing Page</h3>
+                <p style="color: #888; font-size: 14px; line-height: 1.7;">Built the landing page using Next.js, React, and Tailwind CSS. Implemented navigation to the career history page and the initial canon item form so users can start adding career entries right away.</p>
+            </div>
+
+            <div style="background: #111; border-radius: 10px; padding: 28px;">
+                <i class="fa-solid fa-timeline" style="font-size: 24px; color: #87CEFA; margin-bottom: 12px; display: block;"></i>
+                <h3 style="margin-bottom: 10px;">Career History Page</h3>
+                <p style="color: #888; font-size: 14px; line-height: 1.7;">Implemented the career history page UI where users fill out and submit canon items. Submitted items render below the form so users can review their full career history at a glance.</p>
+            </div>
+
+            <div style="background: #111; border-radius: 10px; padding: 28px;">
+                <i class="fa-solid fa-grip-vertical" style="font-size: 24px; color: #87CEFA; margin-bottom: 12px; display: block;"></i>
+                <h3 style="margin-bottom: 10px;">Drag-and-Drop Reordering</h3>
+                <p style="color: #888; font-size: 14px; line-height: 1.7;">Built the drag-and-drop section reordering system on the resume builder page, enabling users to move entire resume sections and reorder items within each section to match their preferences.</p>
+            </div>
+
+            <div style="background: #111; border-radius: 10px; padding: 28px;">
+                <i class="fa-solid fa-palette" style="font-size: 24px; color: #87CEFA; margin-bottom: 12px; display: block;"></i>
+                <h3 style="margin-bottom: 10px;">Template Selector</h3>
+                <p style="color: #888; font-size: 14px; line-height: 1.7;">Engineered a live template selector UI — clicking a template immediately updates both the on-screen resume preview and the exported PDF download, giving users real-time visual feedback.</p>
+            </div>
+
+            <div style="background: #111; border-radius: 10px; padding: 28px;">
+                <i class="fa-solid fa-code" style="font-size: 24px; color: #87CEFA; margin-bottom: 12px; display: block;"></i>
+                <h3 style="margin-bottom: 10px;">Custom Hooks & Minimal Dependencies</h3>
+                <p style="color: #888; font-size: 14px; line-height: 1.7;">Kept the frontend lean by building custom React hooks instead of reaching for additional libraries, reducing bundle size and keeping the codebase maintainable.</p>
+            </div>
+
+            <div style="background: #111; border-radius: 10px; padding: 28px;">
+                <i class="fa-solid fa-bell" style="font-size: 24px; color: #87CEFA; margin-bottom: 12px; display: block;"></i>
+                <h3 style="margin-bottom: 10px;">UI Polish & Notifications</h3>
+                <p style="color: #888; font-size: 14px; line-height: 1.7;">Integrated Lucide React icons and React Hot Toast notifications throughout the application to provide consistent, lightweight feedback across all user interactions.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="copyright" style="margin-top: 60px;">
+        <p>Copyright © Keith Tran.</p>
+    </div>
+
+</body>
+</html>

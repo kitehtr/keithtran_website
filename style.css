@@ -535,3 +535,13 @@ nav .fa-solid{
 #videos p {
     color: white;
 }
+
+
+.work {
+    height: 300px;
+}
+
+#portfolio .work-list:first-of-type {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    justify-content: center;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie ML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6db076813e.js" crossorigin="anonymous"></script>
+    <style>
+        .back-link {
+            text-decoration: none;
+            color: #87CEFA;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .btn-inline {
+            display: inline-block;
+        }
+        .contributions {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .perf-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        .perf-card {
+            background: #111;
+            border-radius: 10px;
+            padding: 28px;
+            text-align: center;
+        }
+        .perf-stat {
+            font-size: 42px;
+            font-weight: bold;
+            color: #87CEFA;
+            margin-bottom: 6px;
+        }
+        .perf-label {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .genre-table {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            border-collapse: collapse;
+        }
+        .genre-table th {
+            color: #87CEFA;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 10px 16px;
+            border-bottom: 1px solid #222;
+            text-align: left;
+        }
+        .genre-table td {
+            color: #aaa;
+            font-size: 14px;
+            padding: 10px 16px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .genre-table tr:last-child td {
+            border-bottom: none;
+        }
+        .correlation-bar {
+            display: inline-block;
+            height: 8px;
+            border-radius: 4px;
+            background: #87CEFA;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .tag-strong { color: #5adb8a; }
+        .tag-moderate { color: #f0c040; }
+        .tag-weak { color: #888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header style="padding: 20px 0 10px;">
+            <h2><a href="index.html" class="back-link">⬅ Back to Portfolio</a></h2>
+        </header>
+
+        <h1 style="text-align: center; margin-bottom: 10px;">Movie Revenue & Rating Prediction</h1>
+        <p style="text-align: center; color: #aaa; margin-bottom: 20px;">Machine Learning System &nbsp;·&nbsp; Solo Project &nbsp;·&nbsp; Python / Scikit-learn</p>
+
+        <p style="text-align: center; max-width: 650px; margin: 0 auto 30px; color: #aaa; line-height: 1.8;">
+            A supervised machine learning system that predicts box office revenue and identifies optimal runtime ranges for maximizing audience ratings across film genres.
+        </p>
+
+        <div style="text-align: center; margin-bottom: 40px;">
+            <a href="https://github.com/kitehtr/movie-performance-ml" target="_blank" class="btn btn-inline">
+                <i class="fa-brands fa-github"></i> &nbsp; GitHub
+            </a>
+            <a href="https://docs.google.com/document/d/1FnmfQOczNIhKF1QcXP60P7wGuoXKZlFxGqMfvfgkgR0/edit?usp=sharing" target="_blank" class="btn btn-inline" style="margin-left: 16px;">
+                📄 &nbsp; Documentation
+            </a>
+        </div>
+
+        <img src="personal-portfolio-img/images/machine-learning.png" style="width: 100%; max-width: 800px; height: 400px; object-fit: cover; object-position: top; display: block; margin: 0 auto 50px; border-radius: 12px;">
+
+        <!-- Overview -->
+        <h2 class="sub-title" style="font-size: 40px; margin-bottom: 16px;">Overview</h2>
+        <p style="max-width: 750px; margin: 0 auto 50px; color: #aaa; line-height: 1.9; text-align: center;">
+            This system analyzes a dataset of ~4,800 film records to deliver two capabilities: <strong>revenue prediction</strong> based on budget, genre, and runtime, and <strong>runtime optimization analysis</strong> to identify the runtime ranges most correlated with high audience ratings per genre. Feature engineering and model selection were tuned to balance accuracy with interpretability.
+        </p>
+
+        <!-- Tech Stack -->
+        <h2 class="sub-title" style="font-size: 40px; margin-bottom: 16px;">Tech Stack</h2>
+        <p style="text-align: center; color: #87CEFA; margin-bottom: 50px; line-height: 2;">
+            Python &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; NumPy &nbsp;·&nbsp; Scikit-learn &nbsp;·&nbsp; Random Forest &nbsp;·&nbsp; Gradient Boosting &nbsp;·&nbsp; Jupyter Notebook &nbsp;·&nbsp; Git
+        </p>
+
+        <!-- System Performance -->
+        <h2 class="sub-title" style="font-size: 40px; margin-bottom: 30px;">Model Performance</h2>
+        <div class="perf-grid">
+            <div class="perf-card">
+                <div class="perf-stat">74.6%</div>
+                <div class="perf-label">R² Score<br>Revenue Prediction (Random Forest)</div>
+            </div>
+            <div class="perf-card">
+                <div class="perf-stat">$104M</div>
+                <div class="perf-label">RMSE<br>Root Mean Squared Error</div>
+            </div>
+            <div class="perf-card">
+                <div class="perf-stat">r = 0.468</div>
+                <div class="perf-label">Strongest Runtime Correlation<br>Action genre</div>
+            </div>
+            <div class="perf-card">
+                <div class="perf-stat">~4,800</div>
+                <div class="perf-label">Film Records<br>Kaggle Movies Dataset</div>
+            </div>
+        </div>
+
+        <!-- Runtime correlations -->
+        <h2 class="sub-title" style="font-size: 40px; margin-bottom: 20px;">Runtime–Rating Correlations by Genre</h2>
+        <table class="genre-table">
+            <thead>
+                <tr>
+                    <th>Genre</th>
+                    <th>Correlation (r)</th>
+                    <th>Strength</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Action</td>
+                    <td><span class="correlation-bar" style="width: 93px;"></span>0.468</td>
+                    <td class="tag-strong">Strong</td>
+                </tr>
+                <tr>
+                    <td>Thriller</td>
+                    <td><span class="correlation-bar" style="width: 91px;"></span>0.459</td>
+                    <td class="tag-strong">Strong</td>
+                </tr>
+                <tr>
+                    <td>Adventure</td>
+                    <td><span class="correlation-bar" style="width: 60px;"></span>Moderate</td>
+                    <td class="tag-moderate">Moderate</td>
+                </tr>
+                <tr>
+                    <td>Drama</td>
+                    <td><span class="correlation-bar" style="width: 60px;"></span>Moderate</td>
+                    <td class="tag-moderate">Moderate</td>
+                </tr>
+                <tr>
+                    <td>Horror</td>
+                    <td><span class="correlation-bar" style="width: 60px;"></span>Moderate</td>
+                    <td class="tag-moderate">Moderate</td>
+                </tr>
+                <tr>
+                    <td>Comedy</td>
+                    <td><span class="correlation-bar" style="width: 20px;"></span>Weak</td>
+                    <td class="tag-weak">Weak</td>
+                </tr>
+                <tr>
+                    <td>Animation</td>
+                    <td><span class="correlation-bar" style="width: 20px;"></span>Weak</td>
+                    <td class="tag-weak">Weak</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    <div class="copyright" style="margin-top: 60px;">
+        <p>Copyright © Keith Tran.</p>
+    </div>
+
+</body>
+</html>
